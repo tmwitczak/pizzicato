@@ -6,7 +6,27 @@
 \usepackage{polski}
 \selectlanguage{polish}
 
+\usepackage{vwcol}
+\usepackage[letterspace=20]{letterspace}
+
 \DeclareUnicodeCharacter{00A0}{~}
 
 \begin{document}
+
+\begin{titlepage}
+    \hspace{0em}
+    \vfill
+    \begin{vwcol}[widths={0.2,0.8}, sep=2em, rule=0em]
+        {\normalsize \textbf{\uppercase{Biznesplan}}}
+
+        \vfill\eject
+
+        {\LARGE \lsstyle{Wirtualna perkusja Mike'a Malyana}} \newline \vspace{1em}
+        {\large Tomasz Witczak, 216920} \newline \vspace{1em}
+        {\normalsize \today}
+    \end{vwcol}
+    \vfill
+    \hspace{0em}
+\end{titlepage}
+
 \end{document}
