@@ -1055,20 +1055,142 @@ Rozpatrujemy trzy możliwe scenariusze przebiegu produkcji oraz sprzedaży produ
 
 \section{Plany finansowe}
 
-% - [ ] Zastanów się ile pieniędzy trzeba na założenie i prowadzenie firmy
+% ! [x] Zastanów się ile pieniędzy trzeba na założenie i prowadzenie firmy
 % - [ ] Ile powinniśmy mieć aby firma mogła regulować wydatki na bieżąco?
-% - [ ] Jak uzyskać fundusze?
+% ! [x] Jak uzyskać fundusze?
 
 % - [ ] Elementy planu finansowego
-%   - [ ] bilans
+%   ! [x] bilans
 %   - [ ] założenia
-%   - [ ] rachunek zysków i strat
+%   ! [x] rachunek zysków i strat
 %   - [ ] rachunek przepływów pieniężnych
+
+\subsection{Analiza}
+
+W tablicy \ref{table:plan-finansowy} przedstawiliśmy przybliżony miesięczny plan finansowy na pierwsze 4 lata.
+Jedynym źródłem przychodu będzie internetowa sprzedaż produktu (tablica \ref{table:sales}).
+Do głównych cyklicznych wydatków należą: działalność internetowa (marketing i sprzedaż) oraz pensje.
+
+\paragraph{Działalność internetowa}
+
+Okresowe wydatki na działalność internetową (tablica \ref{table:marketing-sprzedaz}) przez pierwsze pół roku uwzględniają reklamy na Facebooku oraz opłaty za pozycjonowanie.
+Przez kolejne miesiące, koszt za ten dział inwestycji jest niezmienny.
+
+\paragraph{Pensje}
+
+Na pensje pracownicze będą składać się miesięczne wynagrodzenia dla dyrektorów działów oraz dla pracowników.
+Planujemy zatrudnić 4 pracowników na okres nieokreślony.
+Ich głównym zadaniem będzie administracja infrastrukturą sprzedaży oraz nadzorowanie i poprawki programu.
+Kolejnych 6 pracowników zatrudnimy na okres jednego roku.
+Będą odpowiedzialni za wdrożenie technologii oraz początkowy nadzór nad jej funkcjonowaniem.
+Decyzje o formie zatrudnienia motywujemy założeniem o malejącym w czasie zainteresowaniem produktem i zmniejszającymi się zyskami.
+Nasz produkt będzie potrzebował z biegiem czasu mniej zainwestowanych godzin roboczych -- tylko na konserwację, stąd zmniejszone zapotrzebowanie na etaty.
+
+\paragraph{Koszty wstępne}
+
+Koszty związane z wytworzeniem produktu (tablica \ref{table:jednorazowe}) zostaną pokryte z wkładu udziałowców firmy.
+
+\paragraph{Opłaty stałe}
+
+Nie uwzględnialiśmy opłat stałych, np. czynszu za biuro czy opłat za prąd, ponieważ cały zespół pracuje zdalnie.
+
+\subsection{Podsumowanie}
+
+Patrząc na okresowy bilans zysków na pierwsze 4 lata działalności (tablica \ref{table:bilans-zyskow}) zauważamy, że główna część zysku -- ok. 4 mln zł -- zostanie pozyskana w trakcie pierwszego roku.
+
+Jeśli zainteresowanie produktem będzie duże na początku i malejące z czasem, inwestycja będzie przynosić zyski przez pierwsze 2 lata.
+Lata 3 i 4, mimo zmniejszenia wydatków, przyniosą straty.
+
+Po pierwszych 2 latach działalności zostanie podjęta decyzja, czy produkt wart jest wsparcia na kolejne lata.
+W optymistycznym przypadku stałego lub rosnącego zainteresowania produktem, działalność nie przyniesie strat w latach 3 i 4.
+Jeśli firma wypuści w okresie drugiego roku inny produkt, kwestia wsparcia mimo strat pozostanie przedyskutowana w celu zatrzymania obecnych klientów, oferując im ciągłe wsparcie produktu.
+Straty w latach 3 i 4 mogą wtedy zostać potraktowane jako rodzaj marketingu kolejnego produktu i utrzymanie dobrego wizerunku firmy.
+
+Podsumowując, biblioteka sampli perkusyjnych sygnowana nazwiskiem Mike'a Malyana przyniesie ok. 3,2 mln zł zysku przy przewidywanym wsparciu na 4 lata, oraz ok. 4,1 mln zysku, jeśli wsparcie potrwa 2 lata.
 
 % - [ ] Zadaj sobie kilka pytań:
 %   - [ ] Ile pieniędzy firma potrzebuje i w jakim okresie?
 %   - [ ] Jakich zysków można się spodziewać po wprowadzeniu firmy na rynek?
 %   - [ ] Na jakich założeniach oparte są prognozowane wyniki?
+
+\begin{table}[h!]
+ \begin{center}
+ \makebox[\linewidth]{%
+ \begin{tabular}{llr}
+ \toprule
+     \multicolumn{2}{l}{\textbf{Działania}} & \multicolumn{1}{c}{\textbf{Koszt}} \\
+ \midrule
+     \multirow{3}{*}{Realizacja} & Zatrudnienie inżyniera oraz producenta muzycznego & 20 000 zł \\
+     & Wynajęcie studia muzycznego w Wielkiej Brytanii & 22 400 zł \\
+     & Transport zestawu perkusyjnego & 1 000 zł \\
+ \midrule
+     \multirow{1}{*}{Obróbka} & Edycja i przygotowanie nagrań & 20 000 zł \\
+ \midrule
+     \multirow{4}{*}{Oprogramowanie} & Projekt & 10 000 zł \\
+     & Nauka sztucznej inteligencji & 10 000 zł \\
+     & Implementacja & 30 000 zł \\
+     & Testowanie & 10 000 zł \\
+ \midrule
+     \multirow{1}{*}{Działalność internetowa} & Jednorazowe koszty \textsuperscript{\textit{(patrz: tablica \ref{table:marketing-sprzedaz})}} & 30 651 zł \\
+ \midrule
+     \multirow{1}{*}{Praca zdalna} & Wyposażenie pracowników & 66 000 zł \\
+ \bottomrule
+ \end{tabular}}
+ \caption{Jednorazowe wydatki na wytworzenie produktu}
+ \label{table:jednorazowe}
+ \end{center}
+\end{table}
+
+\begin{table}[h!]
+ \begin{center}
+ \makebox[\linewidth]{%
+ \begin{tabular}{llrrrr}
+ \toprule
+     \multicolumn{2}{c}{\multirow{2,5}{*}{\textbf{Okres}}} & \multicolumn{1}{c}{\textbf{Przychody}} & \multicolumn{2}{c}{\textbf{Wydatki}} & \multicolumn{1}{c}{\multirow{2,5}{*}{\textbf{Bilans}}} \\
+ \cmidrule(lr){3-3}
+ \cmidrule(lr){4-5}
+     & & \multicolumn{1}{c}{\textit{Sprzedaż}} & \multicolumn{1}{c}{\textit{Działalność internetowa}} & \multicolumn{1}{c}{\textit{Pensje}} & \\
+ \midrule
+     \multirow{2,5}{*}{1. rok} & 1. połowa & 598 000 zł & 22 210,47 zł & 89 000 zł & 486 789,53 zł \\
+ \cmidrule(l){3-6}
+                               & 2. połowa & 299 000 zł & 9 710,47 zł  & 89 000 zł & 200 289,53 zł \\
+ \midrule
+     2. rok                    &           & 74 750 zł  & 9 710,47 zł  & 59 000 zł & 6 039,53 zł   \\
+ \midrule
+     3. rok                    &           & 37 375 zł  & 9 710,47 zł  & 59 000 zł & -31 335,47 zł \\
+ \midrule
+     4. rok                    &           & 18 688 zł  & 9 710,47 zł  & 59 000 zł & -50 022,97 zł \\
+ \bottomrule
+ \end{tabular}}
+ \caption{Miesięczny plan finansowy na pierwsze 4 lata}
+ \label{table:plan-finansowy}
+ \end{center}
+\end{table}
+
+\begin{table}[h!]
+ \begin{center}
+ \makebox[\linewidth]{%
+ \begin{tabular}{llrr}
+ \toprule
+     \multicolumn{2}{c}{\multirow{2,5}{*}{\textbf{Okres}}} & \multicolumn{2}{c}{\textbf{Bilans}} \\
+ \cmidrule(lr){3-4}
+     & & \multicolumn{1}{c}{\textit{Okresowo}} & \multicolumn{1}{c}{\textit{Łącznie}} \\
+ \midrule
+     \multirow{2,5}{*}{1. rok} & 1. połowa & 2 921 tys. zł & 2 921 tys. zł \\
+ \cmidrule(l){3-4}
+                               & 2. połowa & 1 202 tys. zł & 4 123 tys. zł \\
+ \midrule
+     2. rok                    &           & 72 tys. zł    & 4 195 tys. zł \\
+ \midrule
+     3. rok                    &           & -376 tys. zł  & 3 819 tys. zł \\
+ \midrule
+     4. rok                    &           & -600 tys. zł  & 3 219 tys. zł \\
+ \bottomrule
+ \end{tabular}}
+ \caption{Okresowy bilans zysków na pierwsze 4 lata}
+ \label{table:bilans-zyskow}
+ \end{center}
+\end{table}
 
 \printbibliography
 
